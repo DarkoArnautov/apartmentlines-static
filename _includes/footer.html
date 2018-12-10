@@ -1,31 +1,12 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
+<footer>
+  <div class="footer-wrapper">
+    <table id="footer-table" style="width: 99%;  margin-left: 10px;" cellspacing="0" cellpadding="0">
+      <tr>
+        <td style="vertical-align: top;" class="lineh">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;" class="footerlinks"><span>&copy; Copyright 2018 Apartment Lines. All rights reserved.</span> <span>Phone: &#056;&#048;&#048;&#045;&#053;&#056;&#051;&#045;&#055;&#055;&#054;&#057;</span> <span>Fax: &#056;&#055;&#055;&#045;&#050;&#050;&#053;&#045;&#057;&#056;&#050;&#052;</span> <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#097;&#112;&#097;&#114;&#116;&#109;&#101;&#110;&#116;&#108;&#105;&#110;&#101;&#115;&#046;&#099;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#097;&#112;&#097;&#114;&#116;&#109;&#101;&#110;&#116;&#108;&#105;&#110;&#101;&#115;&#046;&#099;&#111;&#109;</a></td>
+      </tr>
+    </table>
   </div>
-
 </footer>

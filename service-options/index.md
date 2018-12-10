@@ -7,5 +7,3 @@ title: Service options
 ---
 
 Service options markdown goes here.
-
-foo
