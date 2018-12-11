@@ -1,0 +1,14 @@
+{% assign items = site.pages | where:"parent",include.parent | sort: 'weight' %}
+<ul class="hierachy">
+{% for item in items %}
+  {% if item.childidentifier %}
+  <li class="collapsed">
+    <a href="{{ site.url }}{{ item.url }}">{{ item.title }}</a>
+  </li>
+  {% else %}
+  <li class="leaf">
+    <a href="{{ site.url }}{{ item.url }}">{{ item.title }}</a>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>

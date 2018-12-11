@@ -1,9 +1,11 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: page
 title: Tutorials
+parent: home
+childidentifier: tutorials
+weight: 1
 ---
 
-Tutorials go here.
+Here you can find tutorials covering various aspects of your service.
+
+{% include hierachy-of-content.html parent=page.childidentifier %}

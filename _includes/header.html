@@ -24,8 +24,10 @@
                 {%- assign link_class = "active" -%}
               {%- endif -%}
               {%- if my_page.title -%}
-                <a class="headerlink {{ link_class }}" href="{{ my_page.url | relative_url }}" title="{{ my_page.title | escape }}">{{ my_page.title | escape }}</a>
-                <span class="delimiter">&nbsp;&nbsp;</span>
+                {%- if my_page.weight == 1 -%}
+                  <a class="headerlink {{ link_class }}" href="{{ my_page.url | relative_url }}" title="{{ my_page.title | escape }}">{{ my_page.title | escape }}</a>
+                  <span class="delimiter">&nbsp;&nbsp;</span>
+                {%- endif -%}
               {%- endif -%}
             {%- endfor -%}
           </div>

@@ -4,6 +4,7 @@
 
 layout: page
 title: Services/options
+weight: 1
 ---
 
 ### Description of Flat-rate Basic service
