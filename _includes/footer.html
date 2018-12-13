@@ -5,7 +5,20 @@
         <td style="vertical-align: top;" class="lineh">&nbsp;</td>
       </tr>
       <tr>
-        <td style="vertical-align: top;" class="footerlinks"><span>&copy; Copyright 2018 Apartment Lines. All rights reserved.</span> <span>Phone: &#056;&#048;&#048;&#045;&#053;&#056;&#051;&#045;&#055;&#055;&#054;&#057;</span> <span>Fax: &#056;&#055;&#055;&#045;&#050;&#050;&#053;&#045;&#057;&#056;&#050;&#052;</span> <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#097;&#112;&#097;&#114;&#116;&#109;&#101;&#110;&#116;&#108;&#105;&#110;&#101;&#115;&#046;&#099;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#097;&#112;&#097;&#114;&#116;&#109;&#101;&#110;&#116;&#108;&#105;&#110;&#101;&#115;&#046;&#099;&#111;&#109;</a></td>
+        <td style="vertical-align: top;" class="footerlinks">
+          <span>
+            &copy; Copyright {{ site.time | date: '%Y' }} {{ site.name }}. All rights reserved.
+          </span>
+          <span>
+            Phone: {{ site.phone }}
+          </span>
+          <span>
+            Fax: {{ site.fax }}
+          </span>
+          <a href="mailto:{{ site.email }}">
+            {{ site.email }}
+          </a>
+        </td>
       </tr>
     </table>
   </div>

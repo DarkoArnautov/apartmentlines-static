@@ -1,7 +1,7 @@
 ---
 layout: tutorial
-title: Editing a contact
-weight: 2
+title: sample
+weight: 1
 ---
 
 Add, remove and reorder contact numbers.

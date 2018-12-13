@@ -1,0 +1,7 @@
+<a href="/">Home</a>
+{% for id in page.nav_parent_ancestry %}
+  {% assign child = site.pages | where: "nav_id", id | first %}
+  {% if child %}
+    &#187; <a href="{{ child.url }}">{{ child.title }}</a>
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,15 @@
+<script type="text/javascript">
+	window.addEventListener("load", choosePic);
+
+	var randomImages = new Array();
+
+	{% assign items = site.random_images %}
+	{% for item in items %}
+		randomImages.push("{{site.url}}{{item.url}}");
+	{% endfor %}
+
+	function choosePic() {
+    var randomNum = Math.floor(Math.random() * randomImages.length);
+    document.getElementById("random-image").src = randomImages[randomNum];
+	}
+</script>

@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: tutorial
 title: Account control panel
-parent: web-portal
-weight: 4
+weight: 1
 ---
 
 After logging in and clicking the link for your complex, you'll be taken to the account control panel. This is an overview page that provides a quick summary of all the important information for the account.

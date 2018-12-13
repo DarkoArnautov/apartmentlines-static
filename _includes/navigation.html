@@ -1,0 +1,29 @@
+{% if page.nav_parent %}
+  {% assign parent = site.pages | where: "nav_id", page.nav_parent | first %}
+  {% assign siblings = site.pages | where: "nav_parent", page.nav_parent | sort: 'weight' %}
+
+  {% for sibling in siblings %}
+    {% if sibling.weight < page.weight %}
+      {% assign prev = sibling %}
+    {% elsif sibling.weight > page.weight %}
+      {% assign next = sibling %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  <div class="content-nav">
+    <div class="left-nav">
+      {% if prev %}
+      <a href="{{ prev.url }}">< {{ prev.title }}</a>
+      {%endif%}
+    </div>
+    <div class="up-nav">
+      <a href="{{ parent.url }}">up</a>
+    </div>
+    <div class="right-nav">
+      {% if next %}
+      <a href="{{ next.url }}"> {{ next.title }} ></a>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

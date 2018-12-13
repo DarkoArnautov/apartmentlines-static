@@ -1,14 +1,16 @@
-{% assign items = site.pages | where:"parent",include.parent | sort: 'weight' %}
+{% assign items = site.pages | where: "nav_parent", page.nav_id | sort: 'weight' %}
+{% if items.size > 0 %}
 <ul class="hierachy">
 {% for item in items %}
-  {% if item.childidentifier %}
-  <li class="collapsed">
+  {% assign child_items = site.pages | where: "nav_parent", item.nav_id %}
+  {% if child_items.size > 0 %}
+    {% assign klass = "collapsed" %}
+  {% else  %}
+    {% assign klass = "leaf" %}
+  {% endif  %}
+  <li class="{{ klass }}">
     <a href="{{ site.url }}{{ item.url }}">{{ item.title }}</a>
   </li>
-  {% else %}
-  <li class="leaf">
-    <a href="{{ site.url }}{{ item.url }}">{{ item.title }}</a>
-  </li>
-  {% endif %}
 {% endfor %}
 </ul>
+{% endif %}

@@ -14,13 +14,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Apartment Lines
-email: support@apartmentlines.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# These are obfuscated to provide some bot protection.
+# support@apartmentlines.com
+email: "&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#097;&#112;&#097;&#114;&#116;&#109;&#101;&#110;&#116;&#108;&#105;&#110;&#101;&#115;&#046;&#099;&#111;&#109;"
+# 800-583-7769
+phone: "&#056;&#048;&#048;&#045;&#053;&#056;&#051;&#045;&#055;&#055;&#054;&#057;"
+# 877-225-9824
+fax: "&#056;&#055;&#055;&#045;&#050;&#050;&#053;&#045;&#057;&#056;&#050;&#052;"
+
+# Random images.
+random_images:
+  - url: "/assets/images/operators/operator11.jpg"
+  - url: "/assets/images/operators/operator4.jpg"
 
 # Build settings
 markdown: kramdown

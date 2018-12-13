@@ -5,4 +5,4 @@
 layout: page
 ---
 
-Dummy index page.
+Dummy user page.

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post">
+	<div class="breadcrumbs">
+      {%- include breadcrumbs.html -%}
+    </div>
+
+	<header class="post-header">
+		<h1 class="post-title">{{ page.title | escape }}</h1>
+	</header>
+
+	<div class="post-content">
+	    <div class="text-content">
+			{{ content }}
+      {%- include hierachy-of-content.html -%}
+			{%- include navigation.html -%}
+		</div>
+		<div class="random-image">
+			<img src="" id="random-image" />
+		</div>
+	</div>
+	{%- include random-image-load.html -%}
+</article>
+

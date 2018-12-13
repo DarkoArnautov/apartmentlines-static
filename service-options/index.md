@@ -4,7 +4,7 @@
 
 layout: page
 title: Services/options
-weight: 1
+header_nav: true
 ---
 
 ### Description of Flat-rate Basic service
